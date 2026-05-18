@@ -1,0 +1,500 @@
+# Instincts generated from https://github.com/cubxxw/website-1
+# Generated: 2026-04-24T13:58:04.879Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: website-1-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Commit Length
+
+## Action
+
+Write moderate-length commit messages (~63 characters)
+
+## Evidence
+
+- Average commit message length: 63 chars
+- Based on 29 commits
+
+---
+id: website-1-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: website-1-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: website-1-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: website-1-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: website-1-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~9x per month
+- Files: **/api/**
+
+---
+id: website-1-workflow-sync-feature-gate-reference-zh-cn
+trigger: "when doing sync feature gate reference zh cn"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Workflow Sync Feature Gate Reference Zh Cn
+
+## Action
+
+Follow the sync-feature-gate-reference-zh-cn workflow:
+1. Identify new or updated feature gates in the upstream documentation.
+2. Create or update corresponding .md files under zh-cn/docs/reference/command-line-tools-reference/feature-gates/
+3. Commit with a message indicating sync or add for the relevant feature gates.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: content/zh-cn/docs/reference/command-line-tools-reference/feature-gates/*.md
+
+---
+id: website-1-workflow-add-or-update-blog-post-zh-cn
+trigger: "when doing add or update blog post zh cn"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Workflow Add Or Update Blog Post Zh Cn
+
+## Action
+
+Follow the add-or-update-blog-post-zh-cn workflow:
+1. Translate or write the new blog post content.
+2. Add or update files under zh-cn/blog/_posts/ with appropriate naming.
+3. Include any related assets (e.g., SVGs) as needed.
+4. Commit with a message referencing the new post or update.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: content/zh-cn/blog/_posts/**/*.md, content/zh-cn/blog/_posts/**/*.svg
+
+---
+id: website-1-workflow-update-generated-reference-en
+trigger: "when doing update generated reference en"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Workflow Update Generated Reference En
+
+## Action
+
+Follow the update-generated-reference-en workflow:
+1. Regenerate reference documentation for the new version.
+2. Replace or update multiple .md files under reference directories (config-api, kubernetes-api, kubectl, kubeadm, etc).
+3. Commit all updated files with a message referencing the new version.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: content/en/docs/reference/config-api/*.md, content/en/docs/reference/kubernetes-api/**/*.md, content/en/docs/reference/kubectl/generated/**/*.md
+
+---
+id: website-1-workflow-add-or-update-glossary-translation
+trigger: "when doing add or update glossary translation"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/cubxxw/website-1
+---
+
+# Website 1 Workflow Add Or Update Glossary Translation
+
+## Action
+
+Follow the add-or-update-glossary-translation workflow:
+1. Translate the glossary term.
+2. Add or update the relevant .md file under the appropriate language's glossary directory.
+3. Commit with a message referencing the glossary term and language.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: content/zh-cn/docs/reference/glossary/*.md, content/vi/docs/reference/glossary/*.md
+
+---
+id: website-1-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct File Naming
+
+## Action
+
+Name the file using kebab-case
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- All files in examples use kebab-case
+
+---
+id: website-1-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: website-1-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: website-1-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: website-1-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: website-1-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: website-1-instinct-test-location
+trigger: "When adding tests for a feature"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- architecture.testLocation is 'separate'
+- Workflow 'feature-development' includes 'Add tests for feature' as a step
+
+---
+id: website-1-instinct-feature-test-sequence
+trigger: "When implementing a new feature"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Feature Test Sequence
+
+## Action
+
+Add tests after feature implementation and before documentation update
+
+## Evidence
+
+- Workflow 'feature-development' commitSequence: 'Add feature implementation', 'Add tests for feature', 'Update documentation'
+
+---
+id: website-1-instinct-commit-prefix-localization
+trigger: "When committing changes for a localized language (e.g., vi, zh, zh-cn)"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Commit Prefix Localization
+
+## Action
+
+Prefix the commit message with the language code in square brackets (e.g., [vi], [zh], [zh-cn])
+
+## Evidence
+
+- Commits: '[vi] Add Vietnamese translation for glossary cla', '[zh] Add text to system-metrics.md', '[zh-cn]Add WorkloadAwarePreemption...'
+
+---
+id: website-1-instinct-commit-message-reference-update
+trigger: "When bulk updating reference documentation for a new release"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Commit Message Reference Update
+
+## Action
+
+Include the new version number in the commit message
+
+## Evidence
+
+- Commit: 'Update kubeadm reference for v1.36.0'
+- Workflow 'update-generated-reference-en' step: 'Commit all updated files with a message referencing the new version.'
+
+---
+id: website-1-instinct-sync-feature-gate-zh-cn
+trigger: "When a new feature gate is added or updated upstream and needs to be reflected in the zh-cn docs"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Sync Feature Gate Zh Cn
+
+## Action
+
+Create or update .md files under content/zh-cn/docs/reference/command-line-tools-reference/feature-gates/ and commit with a message indicating sync or add
+
+## Evidence
+
+- Workflow 'sync-feature-gate-reference-zh-cn'
+- Commits with '[zh-cn]sync ...'
+
+---
+id: website-1-instinct-add-blog-zh-cn
+trigger: "When a new blog post is published upstream or a translation/update is needed for zh-cn"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Add Blog Zh Cn
+
+## Action
+
+Translate or write the blog post, add/update files under content/zh-cn/blog/_posts/, include assets, and commit with a message referencing the new post or update
+
+## Evidence
+
+- Workflow 'add-or-update-blog-post-zh-cn'
+- Commits adding zh-cn blog posts
+
+---
+id: website-1-instinct-update-reference-en
+trigger: "When a new Kubernetes version is released and generated reference docs need to be updated"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Update Reference En
+
+## Action
+
+Regenerate and update .md files under content/en/docs/reference/* and commit all updated files with a message referencing the new version
+
+## Evidence
+
+- Workflow 'update-generated-reference-en'
+- Commits: 'Update kubeadm reference for v1.36.0', 'Update Config API reference for v1.36.0'
+
+---
+id: website-1-instinct-add-glossary-translation
+trigger: "When a new glossary term is added or updated and needs translation"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: cubxxw/website-1
+---
+
+# Website 1 Instinct Add Glossary Translation
+
+## Action
+
+Translate the glossary term, add/update the relevant .md file under the appropriate language's glossary directory, and commit with a message referencing the glossary term and language
+
+## Evidence
+
+- Workflow 'add-or-update-glossary-translation'
+- Commits: '[vi] Add Vietnamese translation for glossary cla'
+
